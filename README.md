@@ -6,6 +6,28 @@ A Python program that takes as input a file containing DNA sequences in multi-FA
 
 * What are the lengths of the sequences in the file? What is the longest sequence and what is the shortest sequence? Is there more than one longest or shortest sequence? What are their identifiers?
 
+### FASTA format
+
+A sequence file in FASTA format can contain several sequences.
+Each sequence in FASTA format begins with a single-line description, followed by lines of sequence data. The description line must begin with a greater-than (">") symbol in the first column.
+
+An example sequence in FASTA format is:
+
+>AB000263 |acc=AB000263|descr=Homo sapiens mRNA for prepro cortistatin like peptide, complete cds.|len=368
+ACAAGATGCCATTGTCCCCCGGCCTCCTGCTGCTGCTGCTCTCCGGGGCCACGGCCACCGCTGCCCTGCC
+CCTGGAGGGTGGCCCCACCGGCCGAGACAGCGAGCATATGCAGGAAGCGGCAGGAATAAGGAAAAGCAGC
+CTCCTGACTTTCCTCGCTTGGTGGTTTGAGTGGACCTCCCAGGCCAGTGCCGGGCCCCTCATAGGAGAGG
+AAGCTCGGGAGGTGGCCAGGCGGCAGGAAGGCGCACCCCCCCAGCAATCCGCGCGCCGGGACAGAATGCC
+CTGCAGGAACTTCTTCTGGAAGACCTTCTCCTCCTGCAAATAAAACCTCACCCATGAATGCTCACGCAAG
+TTTAATTACAGACCTGAA
+
+Genes that code for proteins comprise open reading frames (ORFs) consisting of a series of codons that 
+specify the amino acid sequence of the protein that the gene codes for. The ORF begins with an initiation 
+codon - usually (but not always) ATG - and ends with a termination codon: TAA, TAG or TGA
+
+https://www.genomatix.de/online_help/help/sequence_formats.html
+
+
 ### ORF (Open Reading Frame)
  In molecular biology, a reading frame is a way of dividing the DNA sequence of nucleotides into a set of consecutive, non-overlapping triplets (or codons). Depending on where we start, there are six possible reading frames: three in the forward (5' to 3') direction and three in the reverse (3' to 5'). For instance, the three possible forward reading frames for the sequence AGGTGACACCGCAAGCCTTATATTAGC are:
 ```
